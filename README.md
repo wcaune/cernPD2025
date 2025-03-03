@@ -36,7 +36,7 @@ services.LArG4Detector.gdmlFileName_: "protodunevd_v5_refactored.gdml"
 
 ## Setup VNC server for ProtoDUNE-VD event display
 In the first time we login, it may ask us to set a password for connection.
-### initial VNC password 
+### Initial VNC password 
 ```bash
 kinit -f -7d username@FNAL.GOV
 ssh -AKXY username@dunegpvm15.fnal.gov
