@@ -1,3 +1,8 @@
+## Modified mass of the particle 
+```bash
+awk '{if (NR % 3 == 0) sub("0.000511", "0.493677"); print}' f.txt > f_modified.txt
+```
+
 ## Calculate events by hands, exported in txt file.
 ```bash
 split -l 3000 -d your_file.txt ek_
