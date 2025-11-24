@@ -1,3 +1,17 @@
+## Input txt file
+Normally in `job/TextFileGen.fcl`, change the text file you want to use.
+```cpp
+BEGIN_PROLOG
+
+standard_textfilegen:
+{
+ module_type:   TextFileGen
+ InputFileName: "dp.txt"
+}
+
+END_PROLOG
+
+```
 ## Modified mass of the particle 
 ```bash
 awk '{if (NR % 3 == 0) sub("0.000511", "0.493677"); print}' f.txt > f_modified.txt
