@@ -12,6 +12,10 @@ standard_textfilegen:
 END_PROLOG
 
 ```
+Or add the line in the end of production fcl file.
+```cpp
+physics.producers.generator.InputFileName: "textfilegen_example.txt"
+```
 ## Modified mass of the particle 
 ```bash
 awk '{if (NR % 3 == 0) sub("0.000511", "0.493677"); print}' f.txt > f_modified.txt
